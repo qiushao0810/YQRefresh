@@ -15,6 +15,11 @@
 		443FACF91E2B12E0008E055F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 443FACF71E2B12E0008E055F /* LaunchScreen.storyboard */; };
 		443FAD041E2B12E0008E055F /* YQRefreshTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 443FAD031E2B12E0008E055F /* YQRefreshTests.m */; };
 		443FAD0F1E2B12E0008E055F /* YQRefreshUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 443FAD0E1E2B12E0008E055F /* YQRefreshUITests.m */; };
+		44F7EE2C1E3222CF009DAF04 /* YQRefreshBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 44F7EE2B1E3222CF009DAF04 /* YQRefreshBaseView.m */; };
+		44F7EE2E1E322315009DAF04 /* arrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 44F7EE2D1E322315009DAF04 /* arrow@2x.png */; };
+		44F7EE311E322EA0009DAF04 /* YQRefreshHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 44F7EE301E322EA0009DAF04 /* YQRefreshHeaderView.m */; };
+		44F7EE341E322EC3009DAF04 /* YQRefreshFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 44F7EE331E322EC3009DAF04 /* YQRefreshFooterView.m */; };
+		44F7EE371E323905009DAF04 /* UIScrollView+YQRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 44F7EE361E323905009DAF04 /* UIScrollView+YQRefresh.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +56,16 @@
 		443FAD0A1E2B12E0008E055F /* YQRefreshUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YQRefreshUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		443FAD0E1E2B12E0008E055F /* YQRefreshUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YQRefreshUITests.m; sourceTree = "<group>"; };
 		443FAD101E2B12E0008E055F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		44F7EE2A1E3222CF009DAF04 /* YQRefreshBaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YQRefreshBaseView.h; sourceTree = "<group>"; };
+		44F7EE2B1E3222CF009DAF04 /* YQRefreshBaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YQRefreshBaseView.m; sourceTree = "<group>"; };
+		44F7EE2D1E322315009DAF04 /* arrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "arrow@2x.png"; sourceTree = "<group>"; };
+		44F7EE2F1E322EA0009DAF04 /* YQRefreshHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YQRefreshHeaderView.h; sourceTree = "<group>"; };
+		44F7EE301E322EA0009DAF04 /* YQRefreshHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YQRefreshHeaderView.m; sourceTree = "<group>"; };
+		44F7EE321E322EC3009DAF04 /* YQRefreshFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YQRefreshFooterView.h; sourceTree = "<group>"; };
+		44F7EE331E322EC3009DAF04 /* YQRefreshFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YQRefreshFooterView.m; sourceTree = "<group>"; };
+		44F7EE351E323905009DAF04 /* UIScrollView+YQRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+YQRefresh.h"; sourceTree = "<group>"; };
+		44F7EE361E323905009DAF04 /* UIScrollView+YQRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+YQRefresh.m"; sourceTree = "<group>"; };
+		44F7EE381E323D56009DAF04 /* YQRefresh.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YQRefresh.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +116,7 @@
 		443FACE81E2B12E0008E055F /* YQRefresh */ = {
 			isa = PBXGroup;
 			children = (
+				44F7EE291E322267009DAF04 /* YQRefresh */,
 				443FACEC1E2B12E0008E055F /* AppDelegate.h */,
 				443FACED1E2B12E0008E055F /* AppDelegate.m */,
 				443FACEF1E2B12E0008E055F /* ViewController.h */,
@@ -138,6 +154,23 @@
 				443FAD101E2B12E0008E055F /* Info.plist */,
 			);
 			path = YQRefreshUITests;
+			sourceTree = "<group>";
+		};
+		44F7EE291E322267009DAF04 /* YQRefresh */ = {
+			isa = PBXGroup;
+			children = (
+				44F7EE381E323D56009DAF04 /* YQRefresh.h */,
+				44F7EE2D1E322315009DAF04 /* arrow@2x.png */,
+				44F7EE2A1E3222CF009DAF04 /* YQRefreshBaseView.h */,
+				44F7EE2B1E3222CF009DAF04 /* YQRefreshBaseView.m */,
+				44F7EE2F1E322EA0009DAF04 /* YQRefreshHeaderView.h */,
+				44F7EE301E322EA0009DAF04 /* YQRefreshHeaderView.m */,
+				44F7EE321E322EC3009DAF04 /* YQRefreshFooterView.h */,
+				44F7EE331E322EC3009DAF04 /* YQRefreshFooterView.m */,
+				44F7EE351E323905009DAF04 /* UIScrollView+YQRefresh.h */,
+				44F7EE361E323905009DAF04 /* UIScrollView+YQRefresh.m */,
+			);
+			path = YQRefresh;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -249,6 +282,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44F7EE2E1E322315009DAF04 /* arrow@2x.png in Resources */,
 				443FACF91E2B12E0008E055F /* LaunchScreen.storyboard in Resources */,
 				443FACF61E2B12E0008E055F /* Assets.xcassets in Resources */,
 				443FACF41E2B12E0008E055F /* Main.storyboard in Resources */,
@@ -277,7 +311,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				443FACF11E2B12E0008E055F /* ViewController.m in Sources */,
+				44F7EE2C1E3222CF009DAF04 /* YQRefreshBaseView.m in Sources */,
 				443FACEE1E2B12E0008E055F /* AppDelegate.m in Sources */,
+				44F7EE341E322EC3009DAF04 /* YQRefreshFooterView.m in Sources */,
+				44F7EE371E323905009DAF04 /* UIScrollView+YQRefresh.m in Sources */,
+				44F7EE311E322EA0009DAF04 /* YQRefreshHeaderView.m in Sources */,
 				443FACEB1E2B12E0008E055F /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -514,6 +552,7 @@
 				443FAD151E2B12E0008E055F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		443FAD161E2B12E0008E055F /* Build configuration list for PBXNativeTarget "YQRefreshTests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +561,7 @@
 				443FAD181E2B12E0008E055F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		443FAD191E2B12E0008E055F /* Build configuration list for PBXNativeTarget "YQRefreshUITests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +570,7 @@
 				443FAD1B1E2B12E0008E055F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
