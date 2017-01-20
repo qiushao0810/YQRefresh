@@ -101,8 +101,10 @@
                 _statusLabel.text = self.normalStateText;
                 if (lastRefreshState == YQRefreshStateLoading) {//之前是在刷新
                     [self updateTimeLabelWitLastUpdateTime:[NSDate date]];
+                    _arrowImage.hidden = YES;
+                }else{
+                    _arrowImage.hidden = NO;
                 }
-                _arrowImage.hidden = NO;
                 [_activityView stopAnimating];
                 
                 [UIView animateWithDuration:0.2 animations:^{
@@ -114,6 +116,7 @@
                 
             case YQRefreshStatePulling:
             {
+                _arrowImage.hidden = NO;
                 _statusLabel.text = self.pullingStateText;
                 
                 [UIView animateWithDuration:0.2 animations:^{
