@@ -15,5 +15,5 @@
 @interface UIScrollView (YQRefresh)
 
 - (YQRefreshHeaderView *)addHeaderWithRefreshHandler:(YQRefreshHandler)refreshHandler;
-- (YQRefreshHeaderView *)addFooterWithRefreshHandler:(YQRefreshHandler)refreshHandler;
+- (YQRefreshFooterView *)addFooterWithRefreshHandler:(YQRefreshHandler)refreshHandler;
 @end
