@@ -28,8 +28,7 @@
     {
         self.automaticallyAdjustsScrollViewInsets = NO;
     }
-    self.title = @"上下拉刷新";
-    
+    self.title = @"YQRefresh";
     rows = 12;
     mTableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 64, self.view.frame.size.height, [UIScreen mainScreen].bounds.size.height - 64) style:UITableViewStylePlain];
     mTableView.delegate = self;
