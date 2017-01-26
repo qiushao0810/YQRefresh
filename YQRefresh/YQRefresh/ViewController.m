@@ -29,7 +29,7 @@
         self.automaticallyAdjustsScrollViewInsets = NO;
     }
     self.title = @"YQRefresh";
-    rows = 12;
+    rows = 5;
     mTableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 64, self.view.frame.size.height, [UIScreen mainScreen].bounds.size.height - 64) style:UITableViewStylePlain];
     mTableView.delegate = self;
     mTableView.dataSource = self;
@@ -62,7 +62,7 @@
     __weak YQRefreshHeaderView *weakHeaderView = headerView;
     
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        rows = 12;
+        rows = 10;
         [weakTableView reloadData];
         [weakHeaderView endRefresh];
     });
