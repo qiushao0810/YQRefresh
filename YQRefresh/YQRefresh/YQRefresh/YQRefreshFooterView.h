@@ -19,9 +19,13 @@
 
 + (instancetype)footerWithRefreshHandler:(YQRefreshHandler)refreshHandler;
 
-//显示没有更多数据
+/**
+ *  显示没有更多数据
+ */
 - (void)showNoMoreData;
-//重置没有更多的数据（消除没有更多数据的状态）
+/**
+ *  重置没有更多的数据（消除没有更多数据的状态）
+ */
 - (void)resetNoMoreData;
 
 @end
