@@ -62,7 +62,7 @@
     __weak YQRefreshHeaderView *weakHeaderView = headerView;
     
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        rows = 10;
+        rows = 5;
         [weakTableView reloadData];
         [weakHeaderView endRefresh];
     });
@@ -73,7 +73,7 @@
     __weak YQRefreshFooterView *weakFooterView = footerView;
     
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        rows += 12;
+        rows += 5;
         [weakTableView reloadData];
         [weakFooterView endRefresh];
     });
